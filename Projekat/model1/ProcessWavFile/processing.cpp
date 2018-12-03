@@ -16,8 +16,8 @@ void gst_audio_invert_transform(inverter_data_t * data, double * input, double *
   float val;
 
   for (i = 0; i < num_samples; i++) {
-	val = input[i] * dry - (1.0 + input[i]) * data->degree;
-    output[i] = val * data->gain;
+	val = (*input++) * dry - (1.0 + (*input)) * data->degree;
+    (*output++) = val * data->gain;
   }
 }
 
@@ -32,35 +32,47 @@ void processing(float degree, float gain, int invertEnable)
 	double L_buffer[BLOCK_SIZE];
 	double R_buffer[BLOCK_SIZE];
 
+	double *psampleBuffer;
+
+	double *pL_buffer = L_buffer; 
+	double *pR_buffer = R_buffer;
+
+	psampleBuffer = sampleBuffer[0];
+
 	for(i = 0; i < BLOCK_SIZE; i++)
 	{
-		L_buffer[i] = sampleBuffer[0][i];
-		R_buffer[i] = sampleBuffer[1][i];
-	}
+		*pL_buffer++ = *psampleBuffer;
+		*pR_buffer++ = *(psampleBuffer + BLOCK_SIZE);
 
+		psampleBuffer++;
+	}
+	
+	pL_buffer = L_buffer; 
+	pR_buffer = R_buffer;
+
+	psampleBuffer = sampleBuffer[0];
 
 	for(i = 0; i < BLOCK_SIZE; i++)
 	{
 		//L
-		sampleBuffer[0][i] *= DEFAULT_GAIN;
-		sampleBuffer[0][i] = sampleBuffer[0][i] + R_buffer[i] * ( 1 - DEFAULT_GAIN);
+		(*psampleBuffer) *= DEFAULT_GAIN;
+		(*psampleBuffer) = (*psampleBuffer) + (*pR_buffer) * ( 1 - DEFAULT_GAIN);
 
 		//R
-		sampleBuffer[1][i] =  L_buffer[i] * DEFAULT_GAIN;
-		sampleBuffer[1][i] = sampleBuffer[1][i] + R_buffer[i] * ( 1 - DEFAULT_GAIN);
+		(*(psampleBuffer + BLOCK_SIZE)) =  (*pL_buffer) * DEFAULT_GAIN;
+		(*(psampleBuffer + BLOCK_SIZE)) = (*(psampleBuffer + BLOCK_SIZE)) + (*pR_buffer) * ( 1 - DEFAULT_GAIN);
 
 		//C
-		sampleBuffer[2][i] =  L_buffer[i] * DEFAULT_GAIN;
-		sampleBuffer[2][i] = sampleBuffer[2][i] + R_buffer[i] * ( 1 - DEFAULT_GAIN);
+		(*(psampleBuffer + 2 * BLOCK_SIZE)) = (*pL_buffer) * DEFAULT_GAIN;
+		(*(psampleBuffer + 2 * BLOCK_SIZE)) = (*(psampleBuffer + 2 * BLOCK_SIZE)) + (*pR_buffer) * ( 1 - DEFAULT_GAIN);
 		
 		//Ls
-		sampleBuffer[3][i] =  L_buffer[i] * DEFAULT_GAIN;
-		sampleBuffer[3][i] = sampleBuffer[3][i] + R_buffer[i] * ( 1 - DEFAULT_GAIN);
-		
+		(*(psampleBuffer + 3 * BLOCK_SIZE)) =  (*pL_buffer) * DEFAULT_GAIN;
+		(*(psampleBuffer + 3 * BLOCK_SIZE)) = (*(psampleBuffer + 3 * BLOCK_SIZE)) + (*pR_buffer) * ( 1 - DEFAULT_GAIN);
 
 		//Rs
-		sampleBuffer[4][i] =  L_buffer[i] * DEFAULT_GAIN;
-		sampleBuffer[4][i] = sampleBuffer[4][i] + R_buffer[i] * ( 1 - DEFAULT_GAIN);
+		(*(psampleBuffer + 4 * BLOCK_SIZE)) =  (*pL_buffer++) * DEFAULT_GAIN;
+		(*(psampleBuffer++ + 4 * BLOCK_SIZE)) = (*(psampleBuffer + 4 * BLOCK_SIZE)) + (*pR_buffer++) * ( 1 - DEFAULT_GAIN);
 	}
 
 	if(invertEnable)

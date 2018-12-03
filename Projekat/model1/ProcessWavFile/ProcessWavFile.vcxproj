@@ -14,7 +14,7 @@
     <ProjectGuid>{CBAA96BA-C0A0-44AC-85DE-CA881308ABD1}</ProjectGuid>
     <RootNamespace>OpenWavFile</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <ProjectName>model0</ProjectName>
+    <ProjectName>model1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

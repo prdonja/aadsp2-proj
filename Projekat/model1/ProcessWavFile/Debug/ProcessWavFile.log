@@ -1,44 +1,31 @@
-﻿Build started 3.12.2018 14:21:02.
-     1>Project "D:\ra207proj\Projekat\ProcessWavFile\ProcessWavFile\ProcessWavFile.vcxproj" on node 2 (build target(s)).
+﻿Build started 3.12.2018 16:44:11.
+     1>Project "D:\ra207proj\Projekat\model1\ProcessWavFile\ProcessWavFile.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\model0.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Creating "Debug\model1.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp processing.cpp WAVheader.cpp
-         WAVheader.cpp
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\wavheader.cpp(84): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt processing.cpp
          processing.cpp
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\processing.cpp(15): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\processing.cpp(18): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\processing.cpp(19): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         main.cpp
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\main.cpp(25): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\main.cpp(27): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>d:\ra207proj\projekat\processwavfile\processwavfile\main.cpp(83): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-         Generating Code...
+     1>d:\ra207proj\projekat\model1\processwavfile\processing.cpp(15): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>d:\ra207proj\projekat\model1\processwavfile\processing.cpp(18): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\ra207proj\projekat\model1\processwavfile\processing.cpp(19): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\model0.exe.embed.manifest.res" Debug\model0_manifest.rc 
+         All outputs are up-to-date.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\model0.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.lib" /MACHINE:X86 Debug\model0.exe.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ra207proj\Projekat\model1\Debug\model1.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\model1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ra207proj\Projekat\model1\Debug\model1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ra207proj\Projekat\model1\Debug\model1.lib" /MACHINE:X86 Debug\model1.exe.embed.manifest.res
          Debug\main.obj
          Debug\processing.obj
          Debug\WAVheader.obj
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\model0.exe.embed.manifest" /manifest Debug\model0.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\model0.exe.embed.manifest.res" Debug\model0_manifest.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\model1.exe.embed.manifest" /manifest Debug\model1.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         All outputs are up-to-date.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\model0.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.lib" /MACHINE:X86 Debug\model0.exe.embed.manifest.res
-         Debug\main.obj
-         Debug\processing.obj
-         Debug\WAVheader.obj
-         ProcessWavFile.vcxproj -> D:\ra207proj\Projekat\ProcessWavFile\Debug\model0.exe
+         All outputs are up-to-date.
+         ProcessWavFile.vcxproj -> D:\ra207proj\Projekat\model1\Debug\model1.exe
        FinalizeBuildStatus:
-         Deleting file "Debug\model0.unsuccessfulbuild".
-         Touching "Debug\model0.lastbuildstate".
-     1>Done Building Project "D:\ra207proj\Projekat\ProcessWavFile\ProcessWavFile\ProcessWavFile.vcxproj" (build target(s)).
+         Deleting file "Debug\model1.unsuccessfulbuild".
+         Touching "Debug\model1.lastbuildstate".
+     1>Done Building Project "D:\ra207proj\Projekat\model1\ProcessWavFile\ProcessWavFile.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.17
+Time Elapsed 00:00:00.38
