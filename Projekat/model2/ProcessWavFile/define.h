@@ -1,10 +1,14 @@
+#include "fixed_point_math.h"
+#include "stdfix_emu.h"
+#include <stdint.h>
+
 #define BLOCK_SIZE 16
 #define MAX_NUM_CHANNEL 8
 
 #define DEFAULT_GAIN 0.5
 
-typedef short DSPshort;
-typedef int DSPint;
-typedef unsigned short DSPushort;
-typedef double DSPfract;
-typedef double DSacum;
+typedef int_fast16_t DSPshort;
+typedef int_fast32_t DSPint;
+typedef uint_fast16_t DSPushort;
+typedef fract DSPfract;
+typedef long_accum DSPaccum;
