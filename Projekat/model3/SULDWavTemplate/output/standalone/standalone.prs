@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1544023321507">
+	<dependencies>
+		<source_file last_build_time="1544023319994" path="src/main.c">
+			<dependency>C:/CirrusDSP/include/stdlib.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdio.h</dependency>
+			<dependency>C:/CirrusDSP/include/string.h</dependency>
+			<dependency>C:/CirrusDSP/include/time.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/wavefile.h</dependency>
+			<dependency>../inc/processing.h</dependency>
+			<dependency>../inc/define.h</dependency>
+			<dependency>../inc/stdfix_emu.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
+			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdint.h</dependency>
+			<dependency>C:/CirrusDSP/include/limits.h</dependency>
+		</source_file>
+		<source_file last_build_time="1544023319542" path="src/processing.c">
+			<dependency>../inc/processing.h</dependency>
+			<dependency>../inc/define.h</dependency>
+			<dependency>../inc/stdfix_emu.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
+			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdint.h</dependency>
+			<dependency>C:/CirrusDSP/include/limits.h</dependency>
+		</source_file>
+	</dependencies>
+</settings>
