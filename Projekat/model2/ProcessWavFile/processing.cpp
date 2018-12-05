@@ -7,8 +7,8 @@ inverter_data_t inverter;
 
 void audio_invert_init()
 {
-	inverter.degree = FRACT_NUM(0);
-	inverter.gain = FRACT_NUM(0.5);
+	inverter.degree = degree;
+	inverter.gain = gain;
 }
 
 void gst_audio_invert_transform(DSPfract * input, DSPfract * output)

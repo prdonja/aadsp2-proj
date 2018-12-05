@@ -1,4 +1,4 @@
-﻿Build started 4.12.2018 17:36:00.
+﻿Build started 5.12.2018 11:26:14.
      1>Project "D:\ra207proj\Projekat\model2\ProcessWavFile\ProcessWavFile.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\model2.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -27,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.60
+Time Elapsed 00:00:01.26
