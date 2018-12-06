@@ -1,9 +1,11 @@
-#include "processing.h"
+/*#include "processing.h"
 
 DSPfract degree; //arg[3]
 DSPfract gain; //arg[4]
 DSPint invertEnable; //arg[5]
 inverter_data_t inverter;
+__memY DSPfract L_buffer[BLOCK_SIZE];
+__memY DSPfract R_buffer[BLOCK_SIZE];
 
 void audio_invert_init()
 {
@@ -11,7 +13,7 @@ void audio_invert_init()
 	inverter.gain = gain;
 }
 
-void gst_audio_invert_transform(DSPfract * input, DSPfract * output)
+void gst_audio_invert_transform(__memY DSPfract * input, __memY DSPfract * output)
 {
   DSPint i;
   DSPfract dry = FRACT_NUM(0.9999) - inverter.degree;
@@ -34,18 +36,11 @@ void gst_audio_invert_transform(DSPfract * input, DSPfract * output)
 void processing()
 {
 	DSPint i = 0;
-	DSPint Idegree = 0;
-	DSPint Igain = 0;
 
-	DSPfract L_buffer[BLOCK_SIZE];
-	DSPfract R_buffer[BLOCK_SIZE];
+	__memY DSPfract *psampleBuffer;
 
-	DSPfract *psampleBuffer;
-
-	DSPfract *pL_buffer = L_buffer; 
-	DSPfract *pR_buffer = R_buffer;
-
-	audio_invert_init();
+	__memY DSPfract *pL_buffer = L_buffer;
+	__memY DSPfract *pR_buffer = R_buffer;
 
 	psampleBuffer = sampleBuffer[0];
 
@@ -67,44 +62,44 @@ void processing()
 
 	for(i = 0; i < BLOCK_SIZE; i++)
 	{
-		//L
+		//set L
 		(*psampleBuffer) =  (*psampleBuffer) * DEFAULT_GAIN;
 		(*psampleBuffer) = (*psampleBuffer) + (*pR_buffer) * (FRACT_NUM(1) - DEFAULT_GAIN);
 
-		//R
+		//set R
 		(*(psampleBuffer + BLOCK_SIZE)) =  (*pL_buffer) * DEFAULT_GAIN;
 		(*(psampleBuffer + BLOCK_SIZE)) = (*(psampleBuffer + BLOCK_SIZE)) + (*pR_buffer) * (FRACT_NUM(1) - DEFAULT_GAIN);
 
-		//C
+		//set C
 		(*(psampleBuffer + 2 * BLOCK_SIZE)) = (*pL_buffer) * DEFAULT_GAIN;
 		(*(psampleBuffer + 2 * BLOCK_SIZE)) = (*(psampleBuffer + 2 * BLOCK_SIZE)) + (*pR_buffer) * (FRACT_NUM(1) - DEFAULT_GAIN);
 		
-		//Ls
+		//set Ls
 		(*(psampleBuffer + 3 * BLOCK_SIZE)) =  (*pL_buffer) * DEFAULT_GAIN;
 		(*(psampleBuffer + 3 * BLOCK_SIZE)) = (*(psampleBuffer + 3 * BLOCK_SIZE)) + (*pR_buffer) * (FRACT_NUM(1) - DEFAULT_GAIN);
 
-		//Rs
+		//set Rs
 		(*(psampleBuffer + 4 * BLOCK_SIZE)) =  (*pL_buffer) * DEFAULT_GAIN;
 		pL_buffer++;
 		(*(psampleBuffer + 4 * BLOCK_SIZE)) = (*(psampleBuffer + 4 * BLOCK_SIZE)) + (*pR_buffer) * (FRACT_NUM(1) - DEFAULT_GAIN);
 		pR_buffer++;
 		psampleBuffer++;
 	}
-
-	if(invertEnable)
+	//if invert is enabled, invert C, Ls, Rs
+	if(invertEnable == 1)
 	{
 		gst_audio_invert_transform(sampleBuffer[2], sampleBuffer[2]);
 	}
 
-	if(invertEnable)
+	if(invertEnable == 1)
 	{
 		gst_audio_invert_transform(sampleBuffer[3], sampleBuffer[3]);
 	}
 
-	if(invertEnable)
+	if(invertEnable == 1)
 	{
 		gst_audio_invert_transform(sampleBuffer[4], sampleBuffer[4]);
 	}
 
 	
-}
+}*/

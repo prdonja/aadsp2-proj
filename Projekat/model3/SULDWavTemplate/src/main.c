@@ -7,7 +7,7 @@
 #include "processing.h"
 #include "stdfix_emu.h"
 
-DSPfract sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];
+__memY DSPfract sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];
 
 DSPint main(DSPint argc, char* argv[])
 {
@@ -24,19 +24,21 @@ DSPint main(DSPint argc, char* argv[])
 	    DSPint i;
 	    DSPint j;
 
-	    //DSPfract argv3 = 0.0;
-	    //DSPfract argv4 = -0.99;
 
 		// Init channel buffers
 	    for (i = 0; i < MAX_NUM_CHANNEL; i++)
+	    {
 	    	for (j = 0; j < BLOCK_SIZE; j++)
+	    	{
 	    		sampleBuffer[i][j] = FRACT_NUM(0.0);
+	    	}
+	    }
 
 		// Open input wav file
 		//-------------------------------------------------
 		strcpy(WavInputName, "../Tone_L1k_R3k.wav");
 		wav_in = cl_wavread_open(WavInputName);
-		 if(wav_in == NULL)
+		if(wav_in == NULL)
 	    {
 	        printf("Error: Could not open wavefile.\n");
 	        return -1;
@@ -66,6 +68,7 @@ DSPint main(DSPint argc, char* argv[])
 		gain = FRACT_NUM(0.5);
 		invertEnable = 1;
 		// Processing loop
+		audio_invert_init();
 		//-------------------------------------------------
 	    {
 			int i;
