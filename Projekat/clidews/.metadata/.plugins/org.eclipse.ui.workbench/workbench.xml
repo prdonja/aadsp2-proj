@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="1040" maximized="true" width="960" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -19,7 +19,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="dsp.uld.ui.editors.StandaloneMultiPageEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="pda.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="pda.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="clide.debug.ui.ceditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,6 +35,8 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
@@ -45,18 +47,26 @@
 </editor>
 <editor id="clide.debug.ui.ceditor" name="processing.c" partName="/WavTemplate/src/processing.c" path="D:/ra207proj/Projekat/model3/SULDWavTemplate/src/processing.c" title="/WavTemplate/src/processing.c" tooltip="D:/ra207proj/Projekat/model3/SULDWavTemplate/src/processing.c&#x0A;WavTemplate/src/processing.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WavTemplate/src/processing.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2435" selectionTopPixel="890"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2663" selectionTopPixel="1133"/>
 </editor>
 <editor id="clide.debug.ui.ceditor" name="processing.h" partName="/WavTemplate/inc/processing.h" path="D:/ra207proj/Projekat/model3/SULDWavTemplate/inc/processing.h" title="/WavTemplate/inc/processing.h" tooltip="D:/ra207proj/Projekat/model3/SULDWavTemplate/inc/processing.h&#x0A;WavTemplate/inc/processing.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WavTemplate/inc/processing.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="243" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="331" selectionTopPixel="0"/>
 </editor>
 <editor id="clide.debug.ui.ceditor" name="main.c" partName="/WavTemplate/src/main.c" path="D:/ra207proj/Projekat/model3/SULDWavTemplate/src/main.c" title="/WavTemplate/src/main.c" tooltip="D:/ra207proj/Projekat/model3/SULDWavTemplate/src/main.c&#x0A;WavTemplate/src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WavTemplate/src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1897" selectionTopPixel="920"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1444" selectionTopPixel="1223"/>
+</editor>
+<editor id="pda.editor" name="processing.a" partName="/WavTemplate/src/processing.a" path="D:/ra207proj/Projekat/model3/SULDWavTemplate/src/processing.a" title="/WavTemplate/src/processing.a" tooltip="D:/ra207proj/Projekat/model3/SULDWavTemplate/src/processing.a&#x0A;WavTemplate/src/processing.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WavTemplate/src/processing.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14350" selectionTopPixel="5108"/>
 </editor>
 <editor activePart="true" focus="true" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" name=".suldproj" partName="/WavTemplate/.suldproj" path="D:/ra207proj/Projekat/model3/SULDWavTemplate/.suldproj" title="/WavTemplate/.suldproj" tooltip="WavTemplate/.suldproj" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WavTemplate/.suldproj"/>
+</editor>
+<editor id="clide.debug.ui.logFileEditor" name="WavTemplate.MAP" partName="/WavTemplate/output/standalone/WavTemplate.MAP" path="D:/ra207proj/Projekat/model3/SULDWavTemplate/output/standalone/WavTemplate.MAP" title="/WavTemplate/output/standalone/WavTemplate.MAP" tooltip="D:/ra207proj/Projekat/model3/SULDWavTemplate/output/standalone/WavTemplate.MAP&#x0A;WavTemplate/output/standalone/WavTemplate.MAP" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WavTemplate/output/standalone/WavTemplate.MAP"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6432" selectionTopPixel="930"/>
 </editor>
 </editors>
 <views>
@@ -68,6 +78,9 @@
 </view>
 <view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
 <viewState activate="true" allSessions="true" column2="477" column3="150" column4="150" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
+</view>
+<view id="dsp.profiling.fulltree.views.SampleView" partName="Profiling">
+<viewState/>
 </view>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables"/>
 <view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
@@ -86,8 +99,7 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -131,44 +143,31 @@
 <view id="dsp.composer.xmlwizard.ui.CLIDEPropertiesView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="left">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.22" ratioLeft="220" ratioRight="780" relationship="2" relative="left"/>
-<info folder="true" part="console" ratio="0.6299127" ratioLeft="577" ratioRight="339" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="console" ratio="0.6299127" ratioLeft="577" ratioRight="339" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.75" ratioLeft="585" ratioRight="195" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" appearance="2" expanded="2">
-<page content="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" label="Properties View"/>
+<info folder="true" part="right" ratio="0.75" ratioLeft="585" ratioRight="195" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" appearance="2" expanded="2">&#x0A;<page content="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" label="Properties View"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -199,6 +198,7 @@
 <view id="clide.debug.ui.memoryView"/>
 <view id="clide.ui.visualization.views.VisualizationView"/>
 <view id="clide.ui.visualization.views.OscilloscopeView"/>
+<view id="dsp.profiling.fulltree.views.SampleView"/>
 <view id="clide.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -231,13 +231,14 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="clide.wiewFolder.console" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="clide.wiewFolder.debug">
+<info folder="true" part="clide.wiewFolder.console" ratio="0.6781116" ratioLeft="632" ratioRight="300" relationship="4" relative="clide.wiewFolder.debug">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="clide.debug.ui.memoryView" label="Memory View"/>
 <page content="clide.ui.visualization.views.VisualizationView" label="Visualization View"/>
 <page content="clide.ui.visualization.views.OscilloscopeView" label="Oscilloscope View"/>
-<page content="clide.ui.visualization.views.ResponseGraphView" label="Response"/>
+<page content="dsp.profiling.fulltree.views.SampleView" label="Profiling"/>
+<page content="clide.ui.visualization.views.ResponseGraphView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -247,7 +248,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25979382" ratioLeft="126" ratioRight="359" relationship="4" relative="clide.wiewFolder.debug"/>
+<info part="org.eclipse.ui.editorss" ratio="0.20031796" ratioLeft="126" ratioRight="503" relationship="4" relative="clide.wiewFolder.debug"/>
 <info folder="true" part="clide.wiewFolder.watch" ratio="0.45" ratioLeft="351" ratioRight="429" relationship="2" relative="clide.wiewFolder.debug">
 <folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
@@ -267,137 +268,147 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" path="/WavTemplate/.suldproj"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/WavTemplate/src/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" path="/WavTemplate/.suldproj"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/WavTemplate/inc/define.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/WavTemplate/src/processing.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/WavTemplate/inc/processing.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/WavTemplate/src/processing.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.logFileEditor" path="/WavTemplate/output/standalone/WavTemplate.MAP"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/WavTemplate/output/standalone/src/processing.s"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/WavTemplate/src/processing.a"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" path="/WavTemplate/.suldproj"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/WavTemplate/output/standalone/src/processing.s"/>
 </editors>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position/>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="7826" y="37"/>
 </item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="181" y="0"/>
+<item historyLabel="/WavTemplate/.suldproj" index="0"/>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="2579" y="0"/>
 </item>
-<item historyLabel="/WavTemplate/.suldproj" index="1"/>
-<item historyLabel="/WavTemplate/inc/define.h" index="2">
-<position info="not_deleted" x="121" y="14"/>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="7826" y="37"/>
 </item>
 <item historyLabel="/WavTemplate/src/processing.c" index="3">
-<position info="not_deleted" x="926" y="0"/>
+<position info="not_deleted" x="2579" y="0"/>
 </item>
-<item historyLabel="/WavTemplate/inc/processing.h" index="4">
-<position info="not_deleted" x="243" y="0"/>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="2185" y="0"/>
 </item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="181" y="0"/>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="2538" y="0"/>
 </item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="824" y="0"/>
+<item historyLabel="/WavTemplate/inc/processing.h" index="2">
+<position info="not_deleted" x="331" y="0"/>
 </item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="872" y="0"/>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="2185" y="0"/>
 </item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="915" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1566" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/.suldproj" index="1"/>
-<item historyLabel="/WavTemplate/src/processing.c" index="3">
-<position info="not_deleted" x="926" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/inc/processing.h" index="4">
-<position info="not_deleted" x="243" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1566" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/.suldproj" index="1"/>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="872" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="915" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="946" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1001" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="675" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/.suldproj" index="5"/>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="872" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="915" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1551" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/inc/define.h" index="2">
-<position info="not_deleted" x="121" y="14"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1551" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/.suldproj" index="5"/>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="872" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="915" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1170" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1218" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1276" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1439" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1326" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1523" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1575" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1661" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="2004" y="0"/>
-</item>
-<item historyLabel="/WavTemplate/.suldproj" index="5"/>
-<item historyLabel="/WavTemplate/src/main.c" index="0">
-<position info="not_deleted" x="1897" y="0"/>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="2538" y="0"/>
 </item>
 <item historyLabel="/WavTemplate/src/processing.c" index="3">
-<position info="not_deleted" x="2435" y="0"/>
+<position info="not_deleted" x="2579" y="0"/>
 </item>
-<item active="true" historyLabel="/WavTemplate/.suldproj" index="5"/>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="2185" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/.suldproj" index="0"/>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="2061" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="2185" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/.suldproj" index="0"/>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="2538" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/inc/processing.h" index="2">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="2315" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/inc/processing.h" index="2">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/WavTemplate.MAP" index="4">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="2538" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="217" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/inc/processing.h" index="2">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="2538" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="2185" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/WavTemplate.MAP" index="4">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/.suldproj" index="0"/>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="374" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="2556" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="374" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/WavTemplate.MAP" index="4">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="5">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.a" index="6">
+<position info="not_deleted" x="14657" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/WavTemplate.MAP" index="4">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/main.c" index="1">
+<position info="not_deleted" x="1444" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/.suldproj" index="0"/>
+<item historyLabel="/WavTemplate/inc/processing.h" index="2">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.a" index="6">
+<position info="not_deleted" x="218" y="11"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="2663" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/.suldproj" index="7"/>
+<item historyLabel="/WavTemplate/output/standalone/src/processing.s" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/.suldproj" index="7"/>
+<item historyLabel="/WavTemplate/src/processing.a" index="6">
+<position info="not_deleted" x="14350" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/output/standalone/WavTemplate.MAP" index="4">
+<position info="not_deleted" x="6432" y="0"/>
+</item>
+<item historyLabel="/WavTemplate/src/processing.c" index="3">
+<position info="not_deleted" x="2663" y="0"/>
+</item>
+<item active="true" historyLabel="/WavTemplate/.suldproj" index="7"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -415,8 +426,17 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.logFileEditor" name="WavTemplate.MAP" tooltip="WavTemplate/output/standalone/WavTemplate.MAP">
+<persistable path="/WavTemplate/output/standalone/WavTemplate.MAP"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="processing.s" tooltip="WavTemplate/output/standalone/src/processing.s">
+<persistable path="/WavTemplate/output/standalone/src/processing.s"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" name=".suldproj" tooltip="WavTemplate/.suldproj">
 <persistable path="/WavTemplate/.suldproj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="processing.a" tooltip="WavTemplate/src/processing.a">
+<persistable path="/WavTemplate/src/processing.a"/>
 </file>
 </mruList>
 </workbench>
